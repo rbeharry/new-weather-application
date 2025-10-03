@@ -13,18 +13,25 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required/>
-            <input type="submit" value="search" />
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+            <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
     <div>
-    <h1>Paris</h1>
-    <p>Tuesday, 4:49, scattered clouds</br>
-    humidity: 66% Wind: 3.13 km/h</p>
+    <h1 class="weather-app-city">Paris</h1>
+    <p class="weather-details">Tuesday, 4:49, scattered clouds</br>
+    humidity: <strong>66%</strong> Wind: <strong>3.13 km/h</strong></p>
     </div>
-    <div>⛅ 12 °C </div>
+    <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">⛅</div>
+        <div class="weather-app-temperature">12</div>
+        <div class="weather-app-unit">°C</div>
+    </div>
+    </div>
+</div>
     </main>
     <footer>Coded by <a href="https://github.com/rbeharry" target="blank">Roxane Beharry</a>, is open-sourced on <a href="https://github.com/rbeharry/new-weather-application" target="blank">GitHub</a> and website hosted on <a href="https://www.netlify.com/" target="blank">Netlify</a></footer>
 </div>
