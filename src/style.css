@@ -1,13 +1,13 @@
 
 body {
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/438/original/colorful-sky-with-sun-background-mountains-sunset-sunrise.jpg?1759523387");
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/489/original/pexels-codioful-7135012.jpg?1759596131");
 }
 .weather-app {
     background: white;
     max-width: 600px;
     margin: 45px auto;
     padding: 30px;
-    box-shadow: 0 30px 50px rgba(65, 50, 100. 0.8);
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.8);
     border-radius: 16px;
     font-family: zelando sans, sans-serif;
 }
@@ -22,7 +22,7 @@ a {
     color: rgb(3, 48, 97);
 }
 .search-form-input {
-    background-color: #ced8e5;
+    background-color: #E7E5FA;
     border: none;
     border-width: 6px;
     width: 80%;
@@ -32,7 +32,7 @@ a {
 }
 
 .search-form-button {
-    background: rgb(3, 48, 97);
+    background: #352e4e;
     padding: 20px;
     border: none;
     border-radius: 6px;
