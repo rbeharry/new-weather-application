@@ -60,7 +60,8 @@ main {
     line-height: 24px;
     color: rgba(39, 33, 66, 0.4);
     font-weight: 500;
-    margin-right: 10px;
+    margin-left: 5px;
+    padding: 10px 0 20px 0;
 
 }
 
@@ -88,6 +89,7 @@ main {
   line-height: 20px;
   margin-top: 8px;
   margin-left: 120px;
+  margin-right: 0px;
   line-height: 44px;
   
  
@@ -101,8 +103,8 @@ main {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
-  margin-left: 70px;
-  margin-right: 25px;
+  margin-left: 55px;
+  margin-right: 5px;
  
 
 
