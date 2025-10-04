@@ -86,11 +86,11 @@ main {
  font-size: 44px;
     width: 88px;
   height: 88px;
-  line-height: 20px;
+  line-height: 50px;
   margin-top: 8px;
   margin-left: 120px;
   margin-right: 0px;
-  line-height: 44px;
+  
   
  
  
@@ -103,7 +103,7 @@ main {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
-  margin-left: 55px;
+  
   margin-right: 5px;
  
 
