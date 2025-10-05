@@ -1,57 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0076)file:///C:/Users/rlbeh/OneDrive/Documents/new-weather-application/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="src/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./index_files/style.css">
+    <script src="./index_files/axios.min.js.download"></script>
     <title>Roxie's weather application</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./index_files/css2" rel="stylesheet">
     </head>
   
 <body>
     <div class="weather-app">
     <header>
         <form class="search-form" id="search-form">
-            <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
-            <input type="submit" value="search" class="search-form-button"/>
+            <input type="search" placeholder="Enter a city..." required="" class="search-form-input" id="search-form-input">
+            <input type="submit" value="search" class="search-form-button">
         </form>
     </header>
     <main>
         <div class="weather-app-data">
     <div>
-    <h1 class="weather-app-city" id="city"></h1>
+    <h1 class="weather-app-city" id="city">New York</h1>
     <p class="weather-details">
-        <span id="time"></span>, <span id="description">scattered clouds</span><br>
-    humidity: <strong id="humidity"></strong> Wind: <strong id="wind-speed"> </strong></p>
+        <span id="time">Sunday, 16:24</span>, <span id="description">clear sky</span><br>
+    humidity: <strong id="humidity">46%</strong> Wind: <strong id="wind-speed">10.36km/h</strong></p>
     </div>
-     <div id="weather-app-icon"></div>
-       <div class="weather-app-temperature" id="temperature"></div>
+     <div id="weather-app-icon"><img src="./index_files/clear-sky-day.png" class="weather-app-icon"></div>
+       <div class="weather-app-temperature" id="temperature">83</div>
         <div class="weather-app-unit">°F</div>
         </div>
-<div class="weather-forecast"> 
-    <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Tue</div>
-        <div class="weather-forecast-icon">⛅</div>
-        <div class="weather-forecast-temperatures">
-            <div class="weather-forecast-temperature">
-            <strong>15°</strong>9°
-            </div>
-
+<div class="weather-forecast" id="forecast"> </div>
+            
+            
+            
+<footer>Coded by <a href="https://github.com/rbeharry" target="blank">Roxane Beharry</a>, is open-sourced on <a href="https://github.com/rbeharry/new-weather-application" target="blank">GitHub</a> and website hosted on <a href="https://www.netlify.com/" target="blank">Netlify</a></footer>
     </main>
         
-<footer>Coded by <a href="https://github.com/rbeharry" target="blank">Roxane Beharry</a>, is open-sourced on <a href="https://github.com/rbeharry/new-weather-application" target="blank">GitHub</a> and website hosted on <a href="https://www.netlify.com/" target="blank">Netlify</a></footer>
-
 </div>
 
-</div>
-</div>
-    </div>
-    </div>
-    </div>
-    <script src ="src/index.js"></script>
-</body>
-</html>
+
+    <script src="./index_files/index.js"></script>
+
+
+
+
+
+
+    
+    
+    </body></html>
