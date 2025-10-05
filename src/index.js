@@ -1,4 +1,3 @@
-alert("hello");
 
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -20,6 +19,7 @@ function refreshWeather(response) {
   iconElement.innerHTML =`<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 console.log (response.data);
 }
+
 
 
 
@@ -86,3 +86,5 @@ function displayForecast() {
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
+}
+displayForecast();
