@@ -17,8 +17,10 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML =`<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
-getForecast(response.data.city);
-  console.log (response.data);
+
+    getForecast(response.data.city);
+
+
 }
 
 
@@ -57,6 +59,19 @@ function handleSearchSubmit(event) {
 
 searchCity(searchInput.value);
 
+function getForecast (city) {
+  let apiKey="3fbc16ffbdt190o64c90aa576419eec5";
+  apiURL=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+axios(apiURL).then(displayForecast);
+ 
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+  
+
 }
 let searchFormElement = document.querySelector("#search-form");
 
@@ -64,10 +79,7 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("New York");
 
-function displayForecast(response) {
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
-  let forecastHtml = "";
-  console.log(response);
+
 
   days.forEach(function (day) {
     forecastHtml =
@@ -91,11 +103,6 @@ function displayForecast(response) {
 }
 
 
-function getForecast (city) {
-  let apiKey="3fbc16ffbdt190o64c90aa576419eec5";
-  apiURL=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
-axios(apiURL).then(displayForecast);
- 
-}
+
 searchCity("paris");
-displayForecast();
+
